@@ -10,7 +10,7 @@ app.use(express.static("public"));
 
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 mailchimp.setConfig({
-    apiKey: "62a1591c0e61861a0ec4e8ce598aeb38-us9",
+    apiKey: "797f0ed80d157deed5d52bc25f0462c3-us9",
     server: "us9",
 });
 
@@ -42,7 +42,7 @@ app.post("/", urlencodedParser, (req, res) => {
         hostname: "us9.api.mailchimp.com",
         path: "/3.0/lists/a933c15de4/members?skip_merge_validation=false",
         headers: {
-            Authorization: "us9 62a1591c0e61861a0ec4e8ce598aeb38-us9",
+            Authorization: "us9 797f0ed80d157deed5d52bc25f0462c3-us9",
             "Content-Type": "application/json",
         },
         maxRedirects: 20,
