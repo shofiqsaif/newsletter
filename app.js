@@ -81,7 +81,7 @@ app.post("/", urlencodedParser, (req, res) => {
     // a933c15de4
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log("Server is running on port " + port);
 });
 
